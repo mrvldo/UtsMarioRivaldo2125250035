@@ -4,59 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_nama_lengkap"
-        android:layout_width="match_parent"
+        android:id="@+id/et_formPendaftaran"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Formulir Pendaftaran"
-        android:layout_margin="50dp"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/et_nama_lengkap"
+        android:id="@+id/et_namaLengkap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Nama Lengkap"
-        android:layout_below="@+id/tv_nama_lengkap"/>
+        android:layout_below="@+id/et_formPendaftaran"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Nama Lengkap" />
 
     <EditText
-        android:id="@+id/et_nomor_pendaftaran"
+        android:id="@+id/et_noPendaftaran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Nomor Pendaftaran"
-        android:layout_below="@+id/et_nama_lengkap"/>
-
-    <Spinner
-        android:id="@+id/sp_jalur_pendaftaran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="Jalur Pendaftaran"
-        android:layout_below="@id/et_nomor_pendaftaran"
-        android:entries="@+array/jalur"/>
-
-    <CheckBox
-        android:id="@+id/cb_konfirmasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Konfirmasi Daftar"
-        android:layout_below="@+id/sp_jalur_pendaftaran"/>
+        android:layout_below="@+id/et_namaLengkap"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Nomor Pendaftaran" />
 
     <Button
         android:id="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:text="Daftar"
-        android:layout_below="@+id/cb_konfirmasi"/>
+        android:text="DAFTAR"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/cb_konfirm"/>
+
+    <Spinner
+        android:id="@+id/sp_jalurPendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_noPendaftaran"
+        android:layout_margin="10dp"
+        android:entries="@array/jalurPendaftaran" />
+    <CheckBox
+        android:id="@+id/cb_konfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konformasi Daftar"
+        android:layout_margin="10dp"
+        android:layout_below="@id/sp_jalurPendaftaran"/>
 
 </RelativeLayout>

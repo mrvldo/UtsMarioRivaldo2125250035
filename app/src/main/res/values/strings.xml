@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">UtsMarioRivaldo2125250035</string>
+    <array name="spin">
+        <item>Jalur Pendaftaran</item>
+        <item>Tes tertulis</item>
+        <item>Jalur Tanpa Tes</item>
+        <item>Ujian Saringan masuk</item>
+    </array>
+
 </resources>
+

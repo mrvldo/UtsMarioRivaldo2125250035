@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_noPendaftaran"
         android:layout_margin="10dp"
-        android:entries="@array/jalurPendaftaran" />
+        android:entries="@array/spin" />
     <CheckBox
         android:id="@+id/cb_konfirm"
         android:layout_width="wrap_content"
